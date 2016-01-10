@@ -61,7 +61,7 @@ public class Main {
 					stillDownloading = true;
 				}
 			}
-			Thread.sleep(30_000);
+			Thread.sleep(15_000);
 		}
 		
 		System.out.println("Finished all");
