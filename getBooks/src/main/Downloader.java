@@ -36,7 +36,7 @@ public class Downloader implements Callable<DownloadResult>{
 		}
 		Elements downloadLinks = bookPage.select("span.download-links > a");
 		Element element = downloadLinks.get(0);
-		String downloadUrl = element.attr("href");
+		String downloadUrl = element.attr("href").replace(" ", "%20");
 		
 		URL url = null;
 		try {
